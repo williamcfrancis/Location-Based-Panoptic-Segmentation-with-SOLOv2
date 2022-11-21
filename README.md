@@ -1,10 +1,14 @@
 # Improved-Efficient-Panoptic-Segmentation
 
+
 Panoptic segmentation is a scene understanding problem that combines the prediction from both instance and semantic segmentation into a general unified output
 Our proposed project implements and modifies the state-of-the-art EfficientPS model by changing the instance segmentation head from Mask-RCNN to SOLOv2
 ![image](https://user-images.githubusercontent.com/38180831/203141810-3c0e51b8-7a79-46ff-b0de-532efb184231.png)
 
 ## EfficientPS Architecture
+
+The original EfficientPS paper: [here](https://arxiv.org/abs/2004.02307)
+Code from the authors of EfficientPS: [here](https://github.com/DeepSceneSeg/EfficientPS)
 
 ![image](https://user-images.githubusercontent.com/38180831/203141883-79fd1093-eb06-4be8-8ddc-b9c8e63a911e.png)
 
@@ -24,9 +28,6 @@ EfficientPS:
 - Jointly optimized end-to-end, Depth-wise separable conv, Leaky ReLU
 - 2 way FPN : semantically rich multiscale features
 
-
-
-
 ### Novelty of this approach
 
 We replace the Mask-RCNN architecture from the instance head with a SOLOv2 architecture in order to improve the instance segmentation of the EfficientPS model
@@ -37,14 +38,10 @@ This approach of using a location-based instance segmentation for panoptic segme
 
 ![image](https://user-images.githubusercontent.com/38180831/203142596-a41e1ffe-8763-4370-8f61-695053aa1a77.png)
 
-### Performance Metrics
+## Results
+
+![image](https://user-images.githubusercontent.com/38180831/203145055-325e047d-db78-437c-b103-bc42593e2c6f.png)
+![image](https://user-images.githubusercontent.com/38180831/203145086-789ef0b7-25c7-4269-b468-a5673fecf22f.png)
 
 
-Panoptic Quality:
-![image](https://user-images.githubusercontent.com/38180831/203144271-9f270dd4-960c-4c54-ae76-f40362689f29.png)
 
-
-Segmentation Quality:
-
-
-Recognition Quality:
