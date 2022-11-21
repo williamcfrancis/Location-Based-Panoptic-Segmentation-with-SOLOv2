@@ -1,8 +1,10 @@
 # Improved-Efficient-Panoptic-Segmentation
 
 
-Panoptic segmentation is a scene understanding problem that combines the prediction from both instance and semantic segmentation into a general unified output
-Our proposed project implements and modifies the state-of-the-art EfficientPS model by changing the instance segmentation head from Mask-RCNN to SOLOv2
+Panoptic segmentation is a scene understanding problem that combines the prediction from both instance and semantic segmentation into a general unified output.
+Our proposed project implements and modifies the state-of-the-art EfficientPS model by changing the instance segmentation head from Mask-RCNN to SOLOv2.
+
+### Why SOLOv2?
 ![image](https://user-images.githubusercontent.com/38180831/203141810-3c0e51b8-7a79-46ff-b0de-532efb184231.png)
 
 ## EfficientPS Architecture
