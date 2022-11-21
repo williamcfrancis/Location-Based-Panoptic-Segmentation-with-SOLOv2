@@ -16,7 +16,7 @@ Our proposed project implements and modifies the state-of-the-art EfficientPS mo
 
 ![image](https://user-images.githubusercontent.com/38180831/203142358-5586e8e2-6d2c-4f97-ae28-04e47eba6247.png)
 
-![image](https://user-images.githubusercontent.com/38180831/203142384-10802c2e-8056-46ef-9d6f-3178d5e6b23a.png)
+![image](https://user-images.githubusercontent.com/38180831/203142384-10802c2e-8056-46ef-9d6f-3178d5e6b23a.png = 200x)
 
 ### Novelty of this approach
 
