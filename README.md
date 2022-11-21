@@ -14,9 +14,18 @@ Our proposed project implements and modifies the state-of-the-art EfficientPS mo
 
 ### Why EfficientPS?
 
-![image](https://user-images.githubusercontent.com/38180831/203142358-5586e8e2-6d2c-4f97-ae28-04e47eba6247.png)
+Early research explored various techniques for Instance segmentation and Semantic segmentation separately. Initial panoptic segmentation methods heuristically combine predictions from state-of-the-art instance segmentation network and semantic segmentation network in a post-processing step. However, they suffered from large computational overhead, redundancy in learning and discrepancy between the predictions of each network.
+Recent works implemented top-down manner with shared components or in a bottom-up manner sequentially. This again did not utilize component sharing and suffered from low computational efficiency, slow runtimes and subpar results.
 
-![image](https://user-images.githubusercontent.com/38180831/203142384-10802c2e-8056-46ef-9d6f-3178d5e6b23a.png =200x100)
+EfficientPS:
+- Shared backbone: EfficientNet
+- Feature aligning semantic head, modified Mask R-CNN
+- Panoptic fusion module: dynamic fusion of logits based on mask confidences
+- Jointly optimized end-to-end, Depth-wise separable conv, Leaky ReLU
+- 2 way FPN : semantically rich multiscale features
+
+
+
 
 ### Novelty of this approach
 
