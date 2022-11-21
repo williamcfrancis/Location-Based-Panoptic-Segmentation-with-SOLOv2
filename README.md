@@ -7,7 +7,7 @@ Our proposed project implements and modifies the state-of-the-art EfficientPS mo
 
 ## EfficientPS Architecture
 
-The original EfficientPS paper: [here](https://arxiv.org/abs/2004.02307)
+The original EfficientPS paper: [here](https://arxiv.org/abs/2004.02307)\
 Code from the authors of EfficientPS: [here](https://github.com/DeepSceneSeg/EfficientPS)
 
 ![image](https://user-images.githubusercontent.com/38180831/203141883-79fd1093-eb06-4be8-8ddc-b9c8e63a911e.png)
@@ -18,9 +18,8 @@ Code from the authors of EfficientPS: [here](https://github.com/DeepSceneSeg/Eff
 
 ### Why EfficientPS?
 
-Early research explored various techniques for Instance segmentation and Semantic segmentation separately. Initial panoptic segmentation methods heuristically combine predictions from state-of-the-art instance segmentation network and semantic segmentation network in a post-processing step. However, they suffered from large computational overhead, redundancy in learning and discrepancy between the predictions of each network.
-Recent works implemented top-down manner with shared components or in a bottom-up manner sequentially. This again did not utilize component sharing and suffered from low computational efficiency, slow runtimes and subpar results.
-
+Early research explored various techniques for Instance segmentation and Semantic segmentation separately. Initial panoptic segmentation methods heuristically combine predictions from state-of-the-art instance segmentation network and semantic segmentation network in a post-processing step. However, they suffered from large computational overhead, redundancy in learning and discrepancy between the predictions of each network.\
+Recent works implemented top-down manner with shared components or in a bottom-up manner sequentially. This again did not utilize component sharing and suffered from low computational efficiency, slow runtimes and subpar results.\
 EfficientPS:
 - Shared backbone: EfficientNet
 - Feature aligning semantic head, modified Mask R-CNN
@@ -30,9 +29,9 @@ EfficientPS:
 
 ### Novelty of this approach
 
-We replace the Mask-RCNN architecture from the instance head with a SOLOv2 architecture in order to improve the instance segmentation of the EfficientPS model
-The Mask-RCNN losses now will be replaced by SOLOv2’s Focal Loss for semantic category classification and DiceLoss for mask prediction
-This approach of using a location-based instance segmentation for panoptic segmentation will improve upon the performance metrics
+We replace the Mask-RCNN architecture from the instance head with a SOLOv2 architecture in order to improve the instance segmentation of the EfficientPS model.\
+The Mask-RCNN losses now will be replaced by SOLOv2’s Focal Loss for semantic category classification and DiceLoss for mask prediction.\
+This approach of using a location-based instance segmentation for panoptic segmentation will improve upon the performance metrics.\
 
 ## Dataset 
 
