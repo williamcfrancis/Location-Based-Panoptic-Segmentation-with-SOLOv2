@@ -130,6 +130,7 @@ This approach of using a location-based instance segmentation for panoptic segme
 
 
 ## Results
+![image](https://user-images.githubusercontent.com/38180831/203146468-67a3e8cc-0a21-493e-be43-26655b6615b3.png)
 
 ![image](https://user-images.githubusercontent.com/38180831/203145055-325e047d-db78-437c-b103-bc42593e2c6f.png)
 ![image](https://user-images.githubusercontent.com/38180831/203145086-789ef0b7-25c7-4269-b468-a5673fecf22f.png)
