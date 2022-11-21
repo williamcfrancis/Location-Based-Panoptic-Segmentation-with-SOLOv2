@@ -53,7 +53,11 @@ python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 pip install git+https://github.com/cocodataset/panopticapi.git
 ```
 - Modify `config.yaml`
+### Train
 - Run `train_net.py`
+
+### Inference
+- Run test.py
 
 ## Choice of implementation
 
