@@ -57,7 +57,7 @@ pip install git+https://github.com/cocodataset/panopticapi.git
 - Run `train_net.py`
 
 ### Inference
-- Run 'test.py'
+- Run `test.py`
 
 ## Choice of implementation
 
