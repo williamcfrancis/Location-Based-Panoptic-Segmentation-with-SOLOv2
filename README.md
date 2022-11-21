@@ -41,9 +41,10 @@ This approach of using a location-based instance segmentation for panoptic segme
 
 
 Panoptic Quality:
+![image](https://user-images.githubusercontent.com/38180831/203144271-9f270dd4-960c-4c54-ae76-f40362689f29.png)
 
 
 Segmentation Quality:
 
 
-Recognition Quality:![image](https://user-images.githubusercontent.com/38180831/203142711-e4276897-70be-4a99-a9ba-8b5e68ea5871.png)
+Recognition Quality:
