@@ -129,7 +129,7 @@ EfficientPS:
 
 We replace the Mask-RCNN architecture from the instance head with a SOLOv2 architecture in order to improve the instance segmentation of the EfficientPS model.\
 The Mask-RCNN losses now will be replaced by SOLOv2’s Focal Loss for semantic category classification and DiceLoss for mask prediction.\
-This approach of using a location-based instance segmentation for panoptic segmentation will improve upon the performance metrics.\
+This approach of using a location-based instance segmentation for panoptic segmentation will improve upon the performance metrics.
 
 
 
