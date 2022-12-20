@@ -16,7 +16,7 @@ Install the following frameworks
 - [COCO 2018 Panoptic Segmentation Task API (Beta version)](https://github.com/cocodataset/panopticapi) to compute panoptic quality metric
 
 ## Install Dependencies
-### For SOLOv2
+### For EfficientPS
 - Install [Albumentation](https://albumentations.ai/)
 ```
 pip install -U albumentations
@@ -41,7 +41,7 @@ python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
 ```
 pip install git+https://github.com/cocodataset/panopticapi.git
 ```
-### For EfficientPS
+### For SOLOv2
 Install the dependencies by running
 ```
 pip install pycocotools
