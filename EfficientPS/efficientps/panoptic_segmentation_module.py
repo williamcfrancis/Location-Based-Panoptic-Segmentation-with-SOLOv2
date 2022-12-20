@@ -25,6 +25,13 @@ def panoptic_segmentation_module(cfg, outputs, device):
     if outputs['instance'] is None:
         return compute_output_only_semantic(outputs['semantic'])
     panoptic_result = []
+    Mla = []
+
+    for i, solo_mask in enumerate(outputs['solo']):
+      Mla.append(solo_mask)
+
+    Mla = torch.stack(Mla).unsqueeze(0)
+    Mla = torch.nn.functional.interpolate(Mla, scale_factor = (0.5,0.5)).squeeze(0)
     # Loop on Batch images / Instances
     for i, instance in enumerate(outputs['instance']):
         instance = check_bbox_size(instance)
@@ -36,7 +43,7 @@ def panoptic_segmentation_module(cfg, outputs, device):
             continue
         semantic = outputs['semantic'][i]
         # Preprocessing
-        Mla = scale_resize_pad(instance).to(device)
+        # Mla = scale_resize_pad(instance).to(device)
         # Compute instances
         Mlb = create_mlb(semantic, instance).to(device)
         Fl = compute_fusion(Mla, Mlb)
@@ -137,6 +144,8 @@ def compute_fusion(Mla, Mlb):
     Returns:
     - Fl (tensor) : Fused mask logits
     """
+    Mlb = Mlb[:Mla.shape[0], :, :]
+
     return (torch.sigmoid(Mla) + torch.sigmoid(Mlb)) * (Mla + Mlb)
 
 def create_canvas_thing(inter_preds, instance):

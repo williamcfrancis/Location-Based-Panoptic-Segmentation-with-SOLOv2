@@ -24,6 +24,7 @@ def generate_pred_panoptic(cfg, outputs):
     # Loop on each validation output
     for output in tqdm(outputs):
         # Loop on each image of the batch
+ 
         for img_panoptic, image_id in zip(output['panoptic'], output['image_id']):
             img_data = dict()
             img_data['image_id'] = image_id
@@ -43,8 +44,8 @@ def generate_pred_panoptic(cfg, outputs):
                     {
                         'id': int(instance),
                         'category_id': int(instance)
-                                       if instance < 1000
-                                       else int(instance / 1000)
+                                        if instance < 1000
+                                        else int(instance / 1000)
                     }
                 )
             # Save panotic_pred

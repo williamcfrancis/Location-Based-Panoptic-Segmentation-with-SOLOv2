@@ -51,7 +51,7 @@ TEST:
 
 # DATA
 # Path to cityscapes dataset
-DATASET_PATH: "/content/drive/MyDrive"
+DATASET_PATH: "/content/drive/MyDrive/mmdetection/data/cityscapes"
 TRAIN_JSON: "gtFine/cityscapes_panoptic_train.json"
 VALID_JSON: "gtFine/cityscapes_panoptic_val.json"
 PRED_DIR: "preds" # Path of images generated in the dataset folder
@@ -83,7 +83,7 @@ CALLBACKS:
   CHECKPOINT_DIR: "logs/test"
 
 # Path to load a model
-CHECKPOINT_PATH: "/content/drive/MyDrive/EfficientPS/logs/test/last.ckpt"
+CHECKPOINT_PATH: "/content/drive/MyDrive/EfficientPS_old/logs/test/last.ckpt"
 BATCH_SIZE: 3
 PRECISION: 16 # Bit precision for mix precision training
 NUM_CLASS: 19

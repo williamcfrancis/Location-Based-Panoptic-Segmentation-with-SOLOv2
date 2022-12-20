@@ -147,10 +147,10 @@ def main():
 
     # Create a pytorch lighting trainer
     trainer = pl.Trainer(
-        # weights_summary='full',
+
         gpus=1,
         num_sanity_val_steps=0,
-        # fast_dev_run=True,
+
         callbacks=[early_stopping, checkpoint],
         precision=cfg.PRECISION,
         resume_from_checkpoint=cfg.CHECKPOINT_PATH,
