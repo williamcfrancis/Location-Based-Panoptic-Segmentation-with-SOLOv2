@@ -3,15 +3,6 @@
 Panoptic segmentation is a scene understanding problem that combines the prediction from both instance and semantic segmentation into a general unified output.
 Our proposed project implements and modifies the state-of-the-art EfficientPS model by changing the instance segmentation head from Mask-RCNN to SOLOv2.
 
-### Why SOLOv2?
-![image](https://user-images.githubusercontent.com/38180831/203141810-3c0e51b8-7a79-46ff-b0de-532efb184231.png)
-
-## EfficientPS Architecture
-
-The original EfficientPS paper: [here](https://arxiv.org/abs/2004.02307)\
-Code from the authors of EfficientPS: [here](https://github.com/DeepSceneSeg/EfficientPS)
-
-![image](https://user-images.githubusercontent.com/38180831/203141883-79fd1093-eb06-4be8-8ddc-b9c8e63a911e.png)
 ## System Requirements
 * Linux 
 * Python 3.7
@@ -111,6 +102,16 @@ EfficientPS
 4. Run the combined evaluation using `python solo_fusion.py`
 
 The results will be saved in `EfficientPS/Outputs`
+
+### Why SOLOv2?
+![image](https://user-images.githubusercontent.com/38180831/203141810-3c0e51b8-7a79-46ff-b0de-532efb184231.png)
+
+## EfficientPS Architecture
+
+The original EfficientPS paper: [here](https://arxiv.org/abs/2004.02307)\
+Code from the authors of EfficientPS: [here](https://github.com/DeepSceneSeg/EfficientPS)
+
+![image](https://user-images.githubusercontent.com/38180831/203141883-79fd1093-eb06-4be8-8ddc-b9c8e63a911e.png)
 
 ### Why EfficientPS?
 
