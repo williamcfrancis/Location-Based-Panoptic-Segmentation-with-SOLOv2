@@ -1,7 +1,7 @@
 # SOLOv2-based Efficient Panoptic Segmentation 
 
 Panoptic segmentation is a scene understanding problem that combines the prediction from both instance and semantic segmentation into a general unified output.
-This project implements a location-based panoptic segmentation model, modifying the state-of-the-art EfficientPS architecture by changing the instance segmentation head from Mask-RCNN to SOLOv2.
+This project implements a location-based panoptic segmentation model, modifying the state-of-the-art EfficientPS architecture by using SOLOv2 as the instance segmentation head instead of a Mask-RCNN.
 
 ## System Requirements
 * Linux 
